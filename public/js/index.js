@@ -136,6 +136,7 @@ function sendTransaction(isAdding) {
   })
   .catch(err => {
     // fetch failed, so save in indexed db
+    window.alert('Failed to connect to Network, Saving to offline storage. Your Transactions will be updated in the database when internet connectivity is back online.');
     console.log('Failed to connect to Network, Saving to IndexedDB..', err);
     saveRecord(transaction);
 
