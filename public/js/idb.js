@@ -9,7 +9,7 @@ request.onupgradeneeded = function (event) {
 request.onsuccess = function (event) {
   db = event.target.result;
   if (navigator.onLine) {
-    uploadTransaction();
+    uploadData();
   }
 };
 
@@ -49,7 +49,7 @@ function uploadData() {
           transactionObjectStore.clear();
         })
         .catch((err) => {
-          console.log(err);
+          console.log("no success!", err);
         });
     }
   };
