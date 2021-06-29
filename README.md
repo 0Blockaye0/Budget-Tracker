@@ -30,7 +30,7 @@
 
   
 
-  ![screenshot](/assets/images/Budget-Tracker)
+  ![screenshot](/assets/images/Budget-Tracker.png)
 
 
   ## Credits
